@@ -1,0 +1,2163 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports  - Tag: @ALoginpage</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Cucumber concept</td>
+            <td>29 Sep 2023, 19:29</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Tag Report</h2>
+      </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+        
+<thead>
+  <tr class="header dont-sort">
+        <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Tag</th>
+        <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">@ALoginpage</td>
+          <td      class="passed"    >13</td>
+          <td      class="failed"    >7</td>
+          <td     class="skipped"   >27</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">47</td>
+
+          <td  class="passed"    >1</td>
+          <td  class="failed"    >7</td>
+          <td class="total">8</td>
+
+          <td class="duration" data-value="18861569000">18.861</td>
+          <td class="failed">Failed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="elements">
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_1_478524080.html">To validate the alogin screen functionalites</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_3503750774.html">@ALoginpage</a>
+           <a href="report-tag_2149469701.html">@One</a>
+      </div>
+
+  
+  <span class="lead-duration duration">9.659</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Averify user able to login the application</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+    
+
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">Lanuch the correct url</span>
+  
+  <span class="lead-duration duration">3.503</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Print the tittle of the page</span>
+  
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">passing the valid and invalid username <span class="argument">&quot;support@proglint.com&quot;</span></span>
+  
+  <span class="lead-duration duration">0.096</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">passing the empty password <span class="argument">&quot;&quot;</span></span>
+  
+  <span class="lead-duration duration">0.018</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">click on the login button</span>
+  
+  <span class="lead-duration duration">2.284</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">check the error message</span>
+  
+  <span class="lead-duration duration">3.226</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">refresh the page</span>
+  
+  <span class="lead-duration duration">0.524</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_1_478524080.html">To validate the alogin screen functionalites</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_3503750774.html">@ALoginpage</a>
+           <a href="report-tag_2149469701.html">@One</a>
+      </div>
+
+  
+  <span class="lead-duration duration">9.074</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-3">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Averify user able to login the application</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-3" class="collapse collapsable-details  in ">
+    
+
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-4">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-4" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">Lanuch the correct url</span>
+  
+  <span class="lead-duration duration">2.756</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Print the tittle of the page</span>
+  
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">passing the valid and invalid username <span class="argument">&quot;anitha@proglint.com&quot;</span></span>
+  
+  <span class="lead-duration duration">0.072</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">passing the empty password <span class="argument">&quot;&quot;</span></span>
+  
+  <span class="lead-duration duration">0.031</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">click on the login button</span>
+  
+  <span class="lead-duration duration">2.273</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">check the error message</span>
+  
+  <span class="lead-duration duration">3.289</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">refresh the page</span>
+  
+  <span class="lead-duration duration">0.646</span>
+
+</div>
+
+        
+
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-5">
+          <a>org.openqa.selenium.NoSuchWindowException:</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchWindowException: Browsing context has been discarded
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [99a7dec9-4189-4c3a-9068-d757357316f7, refresh {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 118.0.1, moz:accessibilityChecks: false, moz:buildID: 20230927232528, moz:debuggerAddress: 127.0.0.1:39802, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 17388, moz:profile: C:\Users\PLAP016\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:39802/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 99a7dec9-4189-4c3a-9068-d757357316f7
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.refresh(RemoteWebDriver.java:992)
+	at org.utilites.Baseclass.refreshTab(Baseclass.java:272)
+	at org.stepdefinition.ALoginAndForgotPasswordStepdefinition.refresh_the_page(ALoginAndForgotPasswordStepdefinition.java:66)
+	at &#10045;.refresh the page(file:///C:/Users/PLAP016/eclipse-workspace/cucumber/src/test/resources/LoginAndForgotPasswordStepdefinition.feature:12)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_1_478524080.html">To validate the alogin screen functionalites</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_3503750774.html">@ALoginpage</a>
+           <a href="report-tag_2149474795.html">@Two</a>
+      </div>
+
+  
+  <span class="lead-duration duration">0.081</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-6">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">verify user able to login the application</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-6" class="collapse collapsable-details  in ">
+    
+
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-7">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-7" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">When</span>
+  <span class="name">passing the empty username</span>
+  
+  <span class="lead-duration duration">0.081</span>
+
+</div>
+
+        
+
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-8">
+          <a>org.openqa.selenium.WebDriverException:</a>
+      </div>
+      <div id="msg-8" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.WebDriverException: Failed to decode response from marionette
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [99a7dec9-4189-4c3a-9068-d757357316f7, findElement {using=xpath, value=//input[@class='form-control']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 118.0.1, moz:accessibilityChecks: false, moz:buildID: 20230927232528, moz:debuggerAddress: 127.0.0.1:39802, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 17388, moz:profile: C:\Users\PLAP016\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:39802/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 99a7dec9-4189-4c3a-9068-d757357316f7
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.utilites.Baseclass.XpathSendkey(Baseclass.java:59)
+	at org.stepdefinition.ALoginAndForgotPasswordStepdefinition.passing_the_empty_username(ALoginAndForgotPasswordStepdefinition.java:70)
+	at &#10045;.passing the empty username(file:///C:/Users/PLAP016/eclipse-workspace/cucumber/src/test/resources/LoginAndForgotPasswordStepdefinition.feature:22)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">passing the valid password</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">click on the login button</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">check the error message empty username and valid password</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">refresh the page</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_1_478524080.html">To validate the alogin screen functionalites</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_3503750774.html">@ALoginpage</a>
+           <a href="report-tag_4060536125.html">@Three</a>
+      </div>
+
+  
+  <span class="lead-duration duration">0.011</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-9">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">verify user able to login the application</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-9" class="collapse collapsable-details  in ">
+    
+
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-10">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-10" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">When</span>
+  <span class="name">passing the valid username</span>
+  
+  <span class="lead-duration duration">0.011</span>
+
+</div>
+
+        
+
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-11">
+          <a>org.openqa.selenium.NoSuchSessionException:</a>
+      </div>
+      <div id="msg-11" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [99a7dec9-4189-4c3a-9068-d757357316f7, findElement {using=xpath, value=//input[@class='form-control']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 118.0.1, moz:accessibilityChecks: false, moz:buildID: 20230927232528, moz:debuggerAddress: 127.0.0.1:39802, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 17388, moz:profile: C:\Users\PLAP016\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:39802/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 99a7dec9-4189-4c3a-9068-d757357316f7
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.utilites.Baseclass.XpathSendkey(Baseclass.java:59)
+	at org.stepdefinition.ALoginAndForgotPasswordStepdefinition.passing_the_valid_username(ALoginAndForgotPasswordStepdefinition.java:96)
+	at &#10045;.passing the valid username(file:///C:/Users/PLAP016/eclipse-workspace/cucumber/src/test/resources/LoginAndForgotPasswordStepdefinition.feature:30)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">passing the invalid password</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">click on the login button</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">check the error message for valid username and invalid password</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">refresh the page</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_1_478524080.html">To validate the alogin screen functionalites</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_3503750774.html">@ALoginpage</a>
+           <a href="report-tag_3231280213.html">@PassingInvalidEmail</a>
+      </div>
+
+  
+  <span class="lead-duration duration">0.006</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-12">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">verify user able to retrive the password</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-12" class="collapse collapsable-details  in ">
+    
+
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-13">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-13" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Given</span>
+  <span class="name">Lanuch the correct url</span>
+  
+  <span class="lead-duration duration">0.005</span>
+
+</div>
+
+        
+
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-14">
+          <a>org.openqa.selenium.NoSuchSessionException:</a>
+      </div>
+      <div id="msg-14" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [99a7dec9-4189-4c3a-9068-d757357316f7, setTimeout {implicit=10000}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 118.0.1, moz:accessibilityChecks: false, moz:buildID: 20230927232528, moz:debuggerAddress: 127.0.0.1:39802, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 17388, moz:profile: C:\Users\PLAP016\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:39802/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 99a7dec9-4189-4c3a-9068-d757357316f7
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:853)
+	at org.utilites.Baseclass.launchUrl(Baseclass.java:33)
+	at org.stepdefinition.ALoginAndForgotPasswordStepdefinition.lanuch_the_correct_url(ALoginAndForgotPasswordStepdefinition.java:129)
+	at &#10045;.Lanuch the correct url(file:///C:/Users/PLAP016/eclipse-workspace/cucumber/src/test/resources/LoginAndForgotPasswordStepdefinition.feature:38)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">Print the tittle of the page</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">Checking Forgot password button active or not</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">click on the forgot password button</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Passing invalid email address <span class="argument">&quot;anitha&quot;</span></span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">click on the sumbit button</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_1_478524080.html">To validate the alogin screen functionalites</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_3503750774.html">@ALoginpage</a>
+           <a href="report-tag_3231280213.html">@PassingInvalidEmail</a>
+      </div>
+
+  
+  <span class="lead-duration duration">0.013</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-15">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">verify user able to retrive the password</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-15" class="collapse collapsable-details  in ">
+    
+
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-16">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-16" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Given</span>
+  <span class="name">Lanuch the correct url</span>
+  
+  <span class="lead-duration duration">0.012</span>
+
+</div>
+
+        
+
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-17">
+          <a>org.openqa.selenium.NoSuchSessionException:</a>
+      </div>
+      <div id="msg-17" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [99a7dec9-4189-4c3a-9068-d757357316f7, setTimeout {implicit=10000}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 118.0.1, moz:accessibilityChecks: false, moz:buildID: 20230927232528, moz:debuggerAddress: 127.0.0.1:39802, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 17388, moz:profile: C:\Users\PLAP016\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:39802/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 99a7dec9-4189-4c3a-9068-d757357316f7
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:853)
+	at org.utilites.Baseclass.launchUrl(Baseclass.java:33)
+	at org.stepdefinition.ALoginAndForgotPasswordStepdefinition.lanuch_the_correct_url(ALoginAndForgotPasswordStepdefinition.java:129)
+	at &#10045;.Lanuch the correct url(file:///C:/Users/PLAP016/eclipse-workspace/cucumber/src/test/resources/LoginAndForgotPasswordStepdefinition.feature:38)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">Print the tittle of the page</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">Checking Forgot password button active or not</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">click on the forgot password button</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Passing invalid email address <span class="argument">&quot;support@proglintcom&quot;</span></span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">click on the sumbit button</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_1_478524080.html">To validate the alogin screen functionalites</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_3503750774.html">@ALoginpage</a>
+           <a href="report-tag_737498512.html">@PassingvalidEmail</a>
+      </div>
+
+  
+  <span class="lead-duration duration">0.007</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-18">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">verify user able to retrive the password</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-18" class="collapse collapsable-details  in ">
+    
+
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-19">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-19" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Given</span>
+  <span class="name">Lanuch the correct url</span>
+  
+  <span class="lead-duration duration">0.007</span>
+
+</div>
+
+        
+
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-20">
+          <a>org.openqa.selenium.NoSuchSessionException:</a>
+      </div>
+      <div id="msg-20" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [99a7dec9-4189-4c3a-9068-d757357316f7, setTimeout {implicit=10000}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 118.0.1, moz:accessibilityChecks: false, moz:buildID: 20230927232528, moz:debuggerAddress: 127.0.0.1:39802, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 17388, moz:profile: C:\Users\PLAP016\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:39802/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 99a7dec9-4189-4c3a-9068-d757357316f7
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:853)
+	at org.utilites.Baseclass.launchUrl(Baseclass.java:33)
+	at org.stepdefinition.ALoginAndForgotPasswordStepdefinition.lanuch_the_correct_url(ALoginAndForgotPasswordStepdefinition.java:129)
+	at &#10045;.Lanuch the correct url(file:///C:/Users/PLAP016/eclipse-workspace/cucumber/src/test/resources/LoginAndForgotPasswordStepdefinition.feature:53)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">Print the tittle of the page</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">Checking Forgot password button active or not</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">click on the forgot password button</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">enter the correct email <span class="argument">&quot;support@proglint.com&quot;</span></span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">click on the sumbit button</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">enter the invaild otp</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">click on the verify otp button</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_1_478524080.html">To validate the alogin screen functionalites</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_3503750774.html">@ALoginpage</a>
+           <a href="report-tag_2208784773.html">@Four</a>
+      </div>
+
+  
+  <span class="lead-duration duration">0.004</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-21">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">verify user able to login the application</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-21" class="collapse collapsable-details  in ">
+    
+
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-22">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-22" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">When</span>
+  <span class="name">passing the valid username</span>
+  
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+        
+
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-23">
+          <a>org.openqa.selenium.NoSuchSessionException:</a>
+      </div>
+      <div id="msg-23" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [99a7dec9-4189-4c3a-9068-d757357316f7, findElement {using=xpath, value=//input[@class='form-control']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 118.0.1, moz:accessibilityChecks: false, moz:buildID: 20230927232528, moz:debuggerAddress: 127.0.0.1:39802, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 17388, moz:profile: C:\Users\PLAP016\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:39802/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 99a7dec9-4189-4c3a-9068-d757357316f7
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.utilites.Baseclass.XpathSendkey(Baseclass.java:59)
+	at org.stepdefinition.ALoginAndForgotPasswordStepdefinition.passing_the_valid_username(ALoginAndForgotPasswordStepdefinition.java:96)
+	at &#10045;.passing the valid username(file:///C:/Users/PLAP016/eclipse-workspace/cucumber/src/test/resources/LoginAndForgotPasswordStepdefinition.feature:69)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">passing the valid password</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">click on the login button</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+
+  </div>
+</div>
+
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

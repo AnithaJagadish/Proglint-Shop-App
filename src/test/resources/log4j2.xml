@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Configuration status="INFO">
+
+    <Appenders>
+
+        <File name="FileAppender" fileName="output.log">
+
+            <PatternLayout pattern="%d %p [%t] %c{1.} - %m%n"/>
+
+        </File>
+
+    </Appenders>
+
+    <Loggers>
+
+        <Root level="info">
+
+            <AppenderRef ref="FileAppender"/>
+
+        </Root>
+
+    </Loggers>
+
+</Configuration>

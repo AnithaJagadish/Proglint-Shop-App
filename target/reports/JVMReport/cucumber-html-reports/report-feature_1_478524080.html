@@ -1,0 +1,1899 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports  - Feature: To validate the alogin screen functionalites</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Cucumber concept</td>
+            <td>18 Oct 2023, 15:00</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+      </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+        
+<thead>
+  <tr class="header dont-sort">
+        <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+        <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">To validate the alogin screen functionalites</td>
+          <td      class="passed"    >47</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">47</td>
+
+          <td  class="passed"    >8</td>
+          <td >0</td>
+          <td class="total">8</td>
+
+          <td class="duration" data-value="62179825100">1:2.179</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+        
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_1499782806.html">@Aloginpage</a>
+      </div>
+
+        
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">To validate the alogin screen functionalites</span>
+  
+
+  </div>
+
+        <div class="description indention"></div>
+
+        <div class="elements inner-level">
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_1499782806.html">@Aloginpage</a>
+           <a href="report-tag_2149469701.html">@One</a>
+      </div>
+
+  
+  <span class="lead-duration duration">10.143</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Averify user able to login the application</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+    
+
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">Lanuch the correct url</span>
+  
+  <span class="lead-duration duration">3.747</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Print the tittle of the page</span>
+  
+  <span class="lead-duration duration">0.008</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">passing the valid and invalid username <span class="argument">&quot;support@proglint.com&quot;</span></span>
+  
+  <span class="lead-duration duration">0.129</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">passing the empty password <span class="argument">&quot;&quot;</span></span>
+  
+  <span class="lead-duration duration">0.031</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">click on the login button</span>
+  
+  <span class="lead-duration duration">2.283</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">check the error message</span>
+  
+  <span class="lead-duration duration">3.358</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">refresh the page</span>
+  
+  <span class="lead-duration duration">0.584</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_1499782806.html">@Aloginpage</a>
+           <a href="report-tag_2149469701.html">@One</a>
+      </div>
+
+  
+  <span class="lead-duration duration">8.862</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-3">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Averify user able to login the application</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-3" class="collapse collapsable-details ">
+    
+
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-4">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-4" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">Lanuch the correct url</span>
+  
+  <span class="lead-duration duration">2.740</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Print the tittle of the page</span>
+  
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">passing the valid and invalid username <span class="argument">&quot;anitha@proglint.com&quot;</span></span>
+  
+  <span class="lead-duration duration">0.055</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">passing the empty password <span class="argument">&quot;&quot;</span></span>
+  
+  <span class="lead-duration duration">0.019</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">click on the login button</span>
+  
+  <span class="lead-duration duration">2.279</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">check the error message</span>
+  
+  <span class="lead-duration duration">3.229</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">refresh the page</span>
+  
+  <span class="lead-duration duration">0.534</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_1499782806.html">@Aloginpage</a>
+           <a href="report-tag_2149474795.html">@Two</a>
+      </div>
+
+  
+  <span class="lead-duration duration">6.153</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-5">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">verify user able to login the application</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-5" class="collapse collapsable-details ">
+    
+
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-6">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-6" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">passing the empty username</span>
+  
+  <span class="lead-duration duration">0.026</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">passing the valid password</span>
+  
+  <span class="lead-duration duration">0.073</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">click on the login button</span>
+  
+  <span class="lead-duration duration">2.342</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">check the error message empty username and valid password</span>
+  
+  <span class="lead-duration duration">3.246</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">refresh the page</span>
+  
+  <span class="lead-duration duration">0.465</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_1499782806.html">@Aloginpage</a>
+           <a href="report-tag_4060536125.html">@Three</a>
+      </div>
+
+  
+  <span class="lead-duration duration">8.336</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">verify user able to login the application</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-7" class="collapse collapsable-details ">
+    
+
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-8">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-8" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">passing the valid username</span>
+  
+  <span class="lead-duration duration">0.088</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">passing the invalid password</span>
+  
+  <span class="lead-duration duration">2.055</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">click on the login button</span>
+  
+  <span class="lead-duration duration">2.401</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">check the error message for valid username and invalid password</span>
+  
+  <span class="lead-duration duration">3.276</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">refresh the page</span>
+  
+  <span class="lead-duration duration">0.514</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_1499782806.html">@Aloginpage</a>
+           <a href="report-tag_3231280213.html">@PassingInvalidEmail</a>
+      </div>
+
+  
+  <span class="lead-duration duration">7.694</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-9">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">verify user able to retrive the password</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-9" class="collapse collapsable-details ">
+    
+
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-10">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-10" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">Lanuch the correct url</span>
+  
+  <span class="lead-duration duration">2.742</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Print the tittle of the page</span>
+  
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Checking Forgot password button active or not</span>
+  
+  <span class="lead-duration duration">0.017</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">click on the forgot password button</span>
+  
+  <span class="lead-duration duration">0.263</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Passing invalid email address <span class="argument">&quot;anitha&quot;</span></span>
+  
+  <span class="lead-duration duration">2.339</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">click on the sumbit button</span>
+  
+  <span class="lead-duration duration">2.326</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_1499782806.html">@Aloginpage</a>
+           <a href="report-tag_3231280213.html">@PassingInvalidEmail</a>
+      </div>
+
+  
+  <span class="lead-duration duration">7.790</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-11">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">verify user able to retrive the password</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-11" class="collapse collapsable-details ">
+    
+
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-12">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-12" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">Lanuch the correct url</span>
+  
+  <span class="lead-duration duration">2.785</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Print the tittle of the page</span>
+  
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Checking Forgot password button active or not</span>
+  
+  <span class="lead-duration duration">0.014</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">click on the forgot password button</span>
+  
+  <span class="lead-duration duration">0.253</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Passing invalid email address <span class="argument">&quot;support@proglintcom&quot;</span></span>
+  
+  <span class="lead-duration duration">2.456</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">click on the sumbit button</span>
+  
+  <span class="lead-duration duration">2.274</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_1499782806.html">@Aloginpage</a>
+           <a href="report-tag_737498512.html">@PassingvalidEmail</a>
+      </div>
+
+  
+  <span class="lead-duration duration">10.107</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">verify user able to retrive the password</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-13" class="collapse collapsable-details ">
+    
+
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-14">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-14" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">Lanuch the correct url</span>
+  
+  <span class="lead-duration duration">2.697</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Print the tittle of the page</span>
+  
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Checking Forgot password button active or not</span>
+  
+  <span class="lead-duration duration">0.008</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">click on the forgot password button</span>
+  
+  <span class="lead-duration duration">0.249</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">enter the correct email <span class="argument">&quot;support@proglint.com&quot;</span></span>
+  
+  <span class="lead-duration duration">2.267</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">click on the sumbit button</span>
+  
+  <span class="lead-duration duration">2.364</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">enter the invaild otp</span>
+  
+  <span class="lead-duration duration">2.479</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">click on the verify otp button</span>
+  
+  <span class="lead-duration duration">0.036</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_1499782806.html">@Aloginpage</a>
+           <a href="report-tag_2208784773.html">@Four</a>
+      </div>
+
+  
+  <span class="lead-duration duration">3.089</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-15">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">verify user able to login the application</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-15" class="collapse collapsable-details ">
+    
+
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-16">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-16" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">passing the valid username</span>
+  
+  <span class="lead-duration duration">0.083</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">passing the valid password</span>
+  
+  <span class="lead-duration duration">0.037</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">click on the login button</span>
+  
+  <span class="lead-duration duration">2.968</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+
+  </div>
+</div>
+
+                  </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

@@ -1,0 +1,3369 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports  - Tag: @test</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Cucumber concept</td>
+            <td>21 Dec 2023, 10:56</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Tag Report</h2>
+      </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+        
+<thead>
+  <tr class="header dont-sort">
+        <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Tag</th>
+        <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">@test</td>
+          <td      class="passed"    >93</td>
+          <td      class="failed"    >1</td>
+          <td     class="skipped"   >1</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">95</td>
+
+          <td  class="passed"    >10</td>
+          <td  class="failed"    >1</td>
+          <td class="total">11</td>
+
+          <td class="duration" data-value="1085810327400">18:5.810</td>
+          <td class="failed">Failed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="elements">
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_1593046353.html">To Proglint shop application functionalites</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_2210145489.html">@test</a>
+      </div>
+
+  
+  <span class="lead-duration duration">12.584</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Login the application with invalid username and empty password</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+    
+
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">Lanuch the correct url</span>
+  
+  <span class="lead-duration duration">10.126</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Print the tittle of the page</span>
+  
+  <span class="lead-duration duration">0.005</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">passing the valid username</span>
+  
+  <span class="lead-duration duration">0.122</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">passing the valid password</span>
+  
+  <span class="lead-duration duration">0.034</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">click on the login button</span>
+  
+  <span class="lead-duration duration">2.294</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_1593046353.html">To Proglint shop application functionalites</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_2210145489.html">@test</a>
+      </div>
+
+  
+  <span class="lead-duration duration">4:27.005</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-3">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Dashboard functionality</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-3" class="collapse collapsable-details ">
+    
+
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-4">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-4" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">Navigation to Dashboard screen</span>
+  
+  <span class="lead-duration duration">2.244</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Requested order click</span>
+  
+  <span class="lead-duration duration">2.716</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Checking the dashboard orders count(Inprogress, Yet to deliver,refund accept and reject)</span>
+  
+  <span class="lead-duration duration">2:47.836</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Set Max Visitor--&gt;Increase</span>
+  
+  <span class="lead-duration duration">4.364</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Set Max Visitor--&gt;Decrease</span>
+  
+  <span class="lead-duration duration">4.463</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">TC11 Store open close status , radio button checking</span>
+  
+  <span class="lead-duration duration">7.106</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">WIWO page navigating</span>
+  
+  <span class="lead-duration duration">8.257</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Hybrid Order page navigation from Dashboard</span>
+  
+  <span class="lead-duration duration">5.889</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Online Order page navigation from Dashboard</span>
+  
+  <span class="lead-duration duration">5.937</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Refund Requests page navigation from Dashboard</span>
+  
+  <span class="lead-duration duration">5.820</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Notifications page Navigation</span>
+  
+  <span class="lead-duration duration">5.668</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Blocked Customer Page navigation from Dashboard</span>
+  
+  <span class="lead-duration duration">5.804</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">No Notifications</span>
+  
+  <span class="lead-duration duration">2.916</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">PIM opened after clicking Goto PIM</span>
+  
+  <span class="lead-duration duration">0.188</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Navigate to orders- verify</span>
+  
+  <span class="lead-duration duration">4.180</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Navigate to Receipt List- verify</span>
+  
+  <span class="lead-duration duration">2.377</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Navigate to Product Search- verify</span>
+  
+  <span class="lead-duration duration">3.413</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Navigate to Store Timing - verify</span>
+  
+  <span class="lead-duration duration">2.417</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Navigate to Promotions- verify</span>
+  
+  <span class="lead-duration duration">2.472</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Navigate to reports - verify</span>
+  
+  <span class="lead-duration duration">2.688</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Navigate to planogram- verify</span>
+  
+  <span class="lead-duration duration">2.478</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Navigate to Refund- verify</span>
+  
+  <span class="lead-duration duration">2.550</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Navigate to Blocked Customer- verify</span>
+  
+  <span class="lead-duration duration">2.616</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Navigate to chat- verify</span>
+  
+  <span class="lead-duration duration">3.029</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Navigate to members- verify</span>
+  
+  <span class="lead-duration duration">3.868</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Navigate to notification- verify</span>
+  
+  <span class="lead-duration duration">2.467</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Navigate to settings- verify</span>
+  
+  <span class="lead-duration duration">3.230</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_1593046353.html">To Proglint shop application functionalites</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_2210145489.html">@test</a>
+      </div>
+
+  
+  <span class="lead-duration duration">2:15.533</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-5">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">verify the order screen functionality</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-5" class="collapse collapsable-details ">
+    
+
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-6">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-6" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">click on the orders tab</span>
+  
+  <span class="lead-duration duration">5.466</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Navigate to pending order details</span>
+  
+  <span class="lead-duration duration">5.745</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Navigate to first order</span>
+  
+  <span class="lead-duration duration">0.583</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Accept the order</span>
+  
+  <span class="lead-duration duration">7.463</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Ready to pickup the order</span>
+  
+  <span class="lead-duration duration">7.562</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Confirm Delivery the order</span>
+  
+  <span class="lead-duration duration">7.484</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Back to orders screen</span>
+  
+  <span class="lead-duration duration">0.565</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Navigate to order screen to reject order</span>
+  
+  <span class="lead-duration duration">18.121</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Searching the valid number(search functionality)</span>
+  
+  <span class="lead-duration duration">7.500</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Searching the invalid number(search functionality)</span>
+  
+  <span class="lead-duration duration">9.045</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Navigate to Bistro order</span>
+  
+  <span class="lead-duration duration">7.763</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Lanuch the correct customer url for order lanching</span>
+  
+  <span class="lead-duration duration">58.232</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_1593046353.html">To Proglint shop application functionalites</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_2210145489.html">@test</a>
+      </div>
+
+  
+  <span class="lead-duration duration">1:26.325</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Receiptlist functionality</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-7" class="collapse collapsable-details ">
+    
+
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-8">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-8" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">Navigate to Receipt screen</span>
+  
+  <span class="lead-duration duration">2.167</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Checking Searchicon,Filter,List of Receiptdetails &amp; Pagination button is displayed</span>
+  
+  <span class="lead-duration duration">0.250</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Applying filter &amp; capturing list</span>
+  
+  <span class="lead-duration duration">36.115</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Close the receipt by close button</span>
+  
+  <span class="lead-duration duration">12.638</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Open the receipt and capture the details of the order</span>
+  
+  <span class="lead-duration duration">7.720</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Checking the search bar</span>
+  
+  <span class="lead-duration duration">0.140</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Checking the pagination</span>
+  
+  <span class="lead-duration duration">27.291</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_1593046353.html">To Proglint shop application functionalites</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_2210145489.html">@test</a>
+      </div>
+
+  
+  <span class="lead-duration duration">1:35.819</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-9">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Verify the Findproduct functionality</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-9" class="collapse collapsable-details ">
+    
+
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-10">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-10" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">To verify the Find Product tab is displayed in the side bar menu and click on the same</span>
+  
+  <span class="lead-duration duration">2.668</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Verify the Find Product header is displayed in the screen if not throw error message</span>
+  
+  <span class="lead-duration duration">0.024</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Verify the Search box is displayed</span>
+  
+  <span class="lead-duration duration">0.045</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Verify the drop down field is displayed</span>
+  
+  <span class="lead-duration duration">0.041</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Verify the placeholder is displayed in the Search box</span>
+  
+  <span class="lead-duration duration">3.025</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Click on the Products which is displayed in the list</span>
+  
+  <span class="lead-duration duration">26.467</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Search the products by Product name</span>
+  
+  <span class="lead-duration duration">0.042</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Verify the Searched product name is displayed in the Search box and displayed in the list</span>
+  
+  <span class="lead-duration duration">10.074</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Clear the product name in the search box</span>
+  
+  <span class="lead-duration duration">15.512</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Search the product by SKU id and clear the id</span>
+  
+  <span class="lead-duration duration">27.397</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Verify the grocery is selected in the drop down</span>
+  
+  <span class="lead-duration duration">0.014</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Verify two options is displayed in the dropdown and print the options</span>
+  
+  <span class="lead-duration duration">7.319</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Verify the grocery is displayed after selecting it</span>
+  
+  <span class="lead-duration duration">3.184</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_1593046353.html">To Proglint shop application functionalites</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_2210145489.html">@test</a>
+      </div>
+
+  
+  <span class="lead-duration duration">29.118</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-11">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">To validate the Store Timing screen functionalites</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-11" class="collapse collapsable-details ">
+    
+
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-12">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-12" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">click on the store timing tab</span>
+  
+  <span class="lead-duration duration">3.102</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">checking the <span class="argument">'Store hours'</span> title is present on the screen</span>
+  
+  <span class="lead-duration duration">5.165</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">checking all the days and timings are present on the screen</span>
+  
+  <span class="lead-duration duration">0.205</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Click on the Edit button and changing the start time and checking the same and checking the cancel functionality</span>
+  
+  <span class="lead-duration duration">12.652</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Click on the Edit button and changing the end time</span>
+  
+  <span class="lead-duration duration">7.992</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_1593046353.html">To Proglint shop application functionalites</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_2210145489.html">@test</a>
+      </div>
+
+  
+  <span class="lead-duration duration">3:12.155</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">verify user able to see and add the Promotions screen</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-13" class="collapse collapsable-details ">
+    
+
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-14">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-14" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">Navigating to Promotions screen</span>
+  
+  <span class="lead-duration duration">2.229</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Verify the combo offer add and edit option</span>
+  
+  <span class="lead-duration duration">32.226</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Verify the multibuy offer add and edit option</span>
+  
+  <span class="lead-duration duration">29.856</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Verify the Free item offer add and edit option</span>
+  
+  <span class="lead-duration duration">33.799</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Verify the Dollar off offer add and edit option</span>
+  
+  <span class="lead-duration duration">29.735</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Verify the Happy hours offer add and edit option</span>
+  
+  <span class="lead-duration duration">34.589</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Verify the customer coupon offer add and edit option</span>
+  
+  <span class="lead-duration duration">29.717</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_1593046353.html">To Proglint shop application functionalites</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_2210145489.html">@test</a>
+      </div>
+
+  
+  <span class="lead-duration duration">38.823</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-15">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">To validate the Reports screen functionalites</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-15" class="collapse collapsable-details ">
+    
+
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-16">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-16" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">click on the Reports tab</span>
+  
+  <span class="lead-duration duration">5.242</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">checking the Reports title is present on the screen</span>
+  
+  <span class="lead-duration duration">3.018</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">click on the Download report button to check the validation</span>
+  
+  <span class="lead-duration duration">5.357</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Checking the From input field and Choosing the current date</span>
+  
+  <span class="lead-duration duration">2.635</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Checking the To input field and Choosing the current date</span>
+  
+  <span class="lead-duration duration">5.031</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">selecting the report type</span>
+  
+  <span class="lead-duration duration">4.422</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">clicking the view report button</span>
+  
+  <span class="lead-duration duration">4.258</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">clicking on the download button to download the report</span>
+  
+  <span class="lead-duration duration">2.449</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Checking the clear button functionality</span>
+  
+  <span class="lead-duration duration">6.408</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_1593046353.html">To Proglint shop application functionalites</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_2210145489.html">@test</a>
+      </div>
+
+  
+  <span class="lead-duration duration">2:19.155</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-17">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">To validate the refund request screen functionalites</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-17" class="collapse collapsable-details  in ">
+    
+
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-18">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-18" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">click on the refundrequest tab</span>
+  
+  <span class="lead-duration duration">5.267</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">checking the Refund requests title is present on the screen</span>
+  
+  <span class="lead-duration duration">3.027</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Launching the order and check the refund action in admin</span>
+  
+  <span class="lead-duration duration">2:2.666</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">When</span>
+  <span class="name">checking the dropdown options and results</span>
+  
+  <span class="lead-duration duration">8.194</span>
+
+</div>
+
+        
+
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-19">
+          <a>org.openqa.selenium.ElementClickInterceptedException:</a>
+      </div>
+      <div id="msg-19" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.ElementClickInterceptedException: Element &lt;select id=&quot;selectRefund&quot; class=&quot;form-select downfield mb-lg-0&quot;&gt; is not clickable at point (653,164) because another element &lt;div class=&quot;modal-body p-50&quot;&gt; obscures it
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [2cf02bc5-d25a-47a5-b295-a06731647797, clickElement {id=df479437-891b-4054-bb94-1588f6cf8e63}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 120.0.1, moz:accessibilityChecks: false, moz:buildID: 20231129155202, moz:debuggerAddress: 127.0.0.1:20318, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13172, moz:profile: C:\Users\PLAP016\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:20318/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[[[FirefoxDriver: firefox on WINDOWS (2cf02bc5-d25a-47a5-b295-a06731647797)] -&gt; xpath: //select[@class='form-select downfield mb-lg-0']]] -&gt; tag name: option]
+Session ID: 2cf02bc5-d25a-47a5-b295-a06731647797
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at org.stepdefinition.Refundrequeststepdefinition.checking_the_dropdown_options_and_results(Refundrequeststepdefinition.java:218)
+	at &#10045;.checking the dropdown options and results(file:///C:/Users/PLAP016/eclipse-workspace/cucumber/src/test/resources/MyStepDefinitions.feature:113)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">checking the Filter conditions and results</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_1593046353.html">To Proglint shop application functionalites</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_2210145489.html">@test</a>
+      </div>
+
+  
+  <span class="lead-duration duration">27.632</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-20">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Chat screen functionality</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-20" class="collapse collapsable-details ">
+    
+
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-21">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-21" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">Navigate to Chat screen and priniting and send message to customer</span>
+  
+  <span class="lead-duration duration">27.632</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_1593046353.html">To Proglint shop application functionalites</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_2210145489.html">@test</a>
+      </div>
+
+  
+  <span class="lead-duration duration">1:1.656</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-22">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Members functionality</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-22" class="collapse collapsable-details ">
+    
+
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-23">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-23" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">Navigate to Members screen</span>
+  
+  <span class="lead-duration duration">12.138</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Adding the new members</span>
+  
+  <span class="lead-duration duration">18.830</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Checking the pagination on Members screen</span>
+  
+  <span class="lead-duration duration">3.153</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Checking the view,edit,search employee functionality</span>
+  
+  <span class="lead-duration duration">27.533</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+        
+  
+        
+
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+
+  </div>
+</div>
+
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

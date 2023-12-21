@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="1,086.623" tests="11" skipped="0" failures="1" errors="0">
+<testcase classname="To Proglint shop application functionalites" name="Login the application with invalid username and empty password" time="12.622">
+<system-out><![CDATA[
+Given Lanuch the correct url................................................passed
+When Print the tittle of the page...........................................passed
+When passing the valid username.............................................passed
+When passing the valid password.............................................passed
+And click on the login button...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To Proglint shop application functionalites" name="Dashboard functionality" time="267.006">
+<system-out><![CDATA[
+Given Navigation to Dashboard screen........................................passed
+When Requested order click..................................................passed
+When Checking the dashboard orders count(Inprogress, Yet to deliver,refund accept and reject).passed
+When Set Max Visitor-->Increase.............................................passed
+When Set Max Visitor-->Decrease.............................................passed
+When TC11 Store open close status , radio button checking...................passed
+When WIWO page navigating...................................................passed
+When Hybrid Order page navigation from Dashboard............................passed
+When Online Order page navigation from Dashboard............................passed
+When Refund Requests page navigation from Dashboard.........................passed
+When Notifications page Navigation..........................................passed
+When Blocked Customer Page navigation from Dashboard........................passed
+When No Notifications.......................................................passed
+When PIM opened after clicking Goto PIM.....................................passed
+When Navigate to orders- verify.............................................passed
+When Navigate to Receipt List- verify.......................................passed
+When Navigate to Product Search- verify.....................................passed
+When Navigate to Store Timing - verify......................................passed
+When Navigate to Promotions- verify.........................................passed
+When Navigate to reports - verify...........................................passed
+When Navigate to planogram- verify..........................................passed
+When Navigate to Refund- verify.............................................passed
+When Navigate to Blocked Customer- verify...................................passed
+When Navigate to chat- verify...............................................passed
+When Navigate to members- verify............................................passed
+And Navigate to notification- verify........................................passed
+Then Navigate to settings- verify...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To Proglint shop application functionalites" name="verify the order screen functionality" time="135.534">
+<system-out><![CDATA[
+When click on the orders tab................................................passed
+When Navigate to pending order details......................................passed
+When Navigate to first order................................................passed
+When Accept the order.......................................................passed
+When Ready to pickup the order..............................................passed
+When Confirm Delivery the order.............................................passed
+When Back to orders screen..................................................passed
+When Navigate to order screen to reject order...............................passed
+When Searching the valid number(search functionality).......................passed
+When Searching the invalid number(search functionality).....................passed
+And Navigate to Bistro order................................................passed
+Then Lanuch the correct customer url for order lanching.....................passed
+]]></system-out>
+</testcase>
+<testcase classname="To Proglint shop application functionalites" name="Receiptlist functionality" time="86.326">
+<system-out><![CDATA[
+Given Navigate to Receipt screen............................................passed
+When Checking Searchicon,Filter,List of Receiptdetails & Pagination button is displayed.passed
+When Applying filter & capturing list.......................................passed
+When Close the receipt by close button......................................passed
+When Open the receipt and capture the details of the order..................passed
+And Checking the search bar.................................................passed
+Then Checking the pagination................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To Proglint shop application functionalites" name="Verify the Findproduct functionality" time="95.819">
+<system-out><![CDATA[
+Given To verify the Find Product tab is displayed in the side bar menu and click on the same.passed
+When Verify the Find Product header is displayed in the screen if not throw error message.passed
+When Verify the Search box is displayed.....................................passed
+When Verify the drop down field is displayed................................passed
+When Verify the placeholder is displayed in the Search box..................passed
+When Click on the Products which is displayed in the list...................passed
+When Search the products by Product name....................................passed
+When Verify the Searched product name is displayed in the Search box and displayed in the list.passed
+When Clear the product name in the search box...............................passed
+When Search the product by SKU id and clear the id..........................passed
+When Verify the grocery is selected in the drop down........................passed
+And Verify two options is displayed in the dropdown and print the options...passed
+Then Verify the grocery is displayed after selecting it.....................passed
+]]></system-out>
+</testcase>
+<testcase classname="To Proglint shop application functionalites" name="To validate the Store Timing screen functionalites" time="29.12">
+<system-out><![CDATA[
+Given click on the store timing tab.........................................passed
+When checking the 'Store hours' title is present on the screen..............passed
+When checking all the days and timings are present on the screen............passed
+And Click on the Edit button and changing the start time and checking the same and checking the cancel functionality.passed
+Then Click on the Edit button and changing the end time.....................passed
+]]></system-out>
+</testcase>
+<testcase classname="To Proglint shop application functionalites" name="verify user able to see and add the Promotions screen" time="192.162">
+<system-out><![CDATA[
+Given Navigating to Promotions screen.......................................passed
+When Verify the combo offer add and edit option.............................passed
+When Verify the multibuy offer add and edit option..........................passed
+When Verify the Free item offer add and edit option.........................passed
+When Verify the Dollar off offer add and edit option........................passed
+And Verify the Happy hours offer add and edit option........................passed
+Then Verify the customer coupon offer add and edit option...................passed
+]]></system-out>
+</testcase>
+<testcase classname="To Proglint shop application functionalites" name="To validate the Reports screen functionalites" time="38.824">
+<system-out><![CDATA[
+Given click on the Reports tab..............................................passed
+And checking the Reports title is present on the screen.....................passed
+When click on the Download report button to check the validation............passed
+When Checking the From input field and Choosing the current date............passed
+When Checking the To input field and Choosing the current date..............passed
+When selecting the report type..............................................passed
+When clicking the view report button........................................passed
+When clicking on the download button to download the report.................passed
+Then Checking the clear button functionality................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To Proglint shop application functionalites" name="To validate the refund request screen functionalites" time="139.184">
+<failure type="org.openqa.selenium.ElementClickInterceptedException" message="Element &lt;select id=&quot;selectRefund&quot; class=&quot;form-select downfield mb-lg-0&quot;&gt; is not clickable at point (653,164) because another element &lt;div class=&quot;modal-body p-50&quot;&gt; obscures it
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [2cf02bc5-d25a-47a5-b295-a06731647797, clickElement {id=df479437-891b-4054-bb94-1588f6cf8e63}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 120.0.1, moz:accessibilityChecks: false, moz:buildID: 20231129155202, moz:debuggerAddress: 127.0.0.1:20318, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13172, moz:profile: C:\Users\PLAP016\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:20318/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[[[FirefoxDriver: firefox on WINDOWS (2cf02bc5-d25a-47a5-b295-a06731647797)] -&gt; xpath: //select[@class='form-select downfield mb-lg-0']]] -&gt; tag name: option]
+Session ID: 2cf02bc5-d25a-47a5-b295-a06731647797">
+<![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <select id="selectRefund" class="form-select downfield mb-lg-0"> is not clickable at point (653,164) because another element <div class="modal-body p-50"> obscures it
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [2cf02bc5-d25a-47a5-b295-a06731647797, clickElement {id=df479437-891b-4054-bb94-1588f6cf8e63}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 120.0.1, moz:accessibilityChecks: false, moz:buildID: 20231129155202, moz:debuggerAddress: 127.0.0.1:20318, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13172, moz:profile: C:\Users\PLAP016\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:20318/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[[[FirefoxDriver: firefox on WINDOWS (2cf02bc5-d25a-47a5-b295-a06731647797)] -> xpath: //select[@class='form-select downfield mb-lg-0']]] -> tag name: option]
+Session ID: 2cf02bc5-d25a-47a5-b295-a06731647797
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at org.stepdefinition.Refundrequeststepdefinition.checking_the_dropdown_options_and_results(Refundrequeststepdefinition.java:218)
+	at ✽.checking the dropdown options and results(file:///C:/Users/PLAP016/eclipse-workspace/cucumber/src/test/resources/MyStepDefinitions.feature:113)
+]]>
+</failure>
+<system-out><![CDATA[
+Given click on the refundrequest tab........................................passed
+When checking the Refund requests title is present on the screen............passed
+When Launching the order and check the refund action in admin...............passed
+When checking the dropdown options and results..............................failed
+Then checking the Filter conditions and results.............................skipped
+]]></system-out>
+</testcase>
+<testcase classname="To Proglint shop application functionalites" name="Chat screen functionality" time="27.634">
+<system-out><![CDATA[
+Given Navigate to Chat screen and priniting and send message to customer....passed
+]]></system-out>
+</testcase>
+<testcase classname="To Proglint shop application functionalites" name="Members functionality" time="61.657">
+<system-out><![CDATA[
+Given Navigate to Members screen............................................passed
+When Adding the new members.................................................passed
+And Checking the pagination on Members screen...............................passed
+Then Checking the view,edit,search employee functionality...................passed
+]]></system-out>
+</testcase>
+</testsuite>
